@@ -37,7 +37,7 @@ const WhatsNew = () => (
         <img
           src="/whats-new.png"
           alt="whats-new"
-          className="w-[90%] h-[90%] object-contain"
+          className="w-[60%] h-[60%] object-contain"
         />
       </motion.div>
     </motion.div>

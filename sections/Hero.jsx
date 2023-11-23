@@ -39,9 +39,16 @@ const Hero = () => (
         />
         <a href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img
+            <motion.img
               src="/stamp.png"
               alt="stamp"
+              initial={{ rotate: 0 }}
+              animate={{ rotate: 360 }}
+              transition={{
+                repeat: Infinity,
+                duration: 10,
+                ease: 'linear',
+              }}
               className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
             />
           </div>

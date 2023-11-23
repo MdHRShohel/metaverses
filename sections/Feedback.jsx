@@ -45,7 +45,18 @@ const Feedback = () => (
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[15%] top-[10%]"
         >
-          <img src="/stamp.png" alt="stamp" className="w-[155px] h-[155px]" />
+          <motion.img
+            src="/stamp.png"
+            alt="stamp"
+            initial={{ rotate: 0 }}
+            animate={{ rotate: 360 }}
+            transition={{
+              repeat: Infinity,
+              duration: 10,
+              ease: 'linear',
+            }}
+            className="w-[155px] h-[155px]"
+          />
         </motion.div>
       </motion.div>
     </motion.div>
